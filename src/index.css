@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-dark: #09090b;
+  --bg-darker: #000000;
+  
+  --calc-bg: rgba(20, 20, 25, 0.6);
+  --calc-border: rgba(255, 255, 255, 0.08);
+  
+  --btn-bg: rgba(255, 255, 255, 0.05);
+  --btn-hover: rgba(255, 255, 255, 0.15);
+  --btn-active: rgba(255, 255, 255, 0.25);
+  
+  --btn-op: rgba(249, 115, 22, 0.8);
+  --btn-op-hover: rgba(249, 115, 22, 1);
+  
+  --btn-clear: rgba(239, 68, 68, 0.8);
+  --btn-clear-hover: rgba(239, 68, 68, 1);
+  
+  --btn-eq: rgba(16, 185, 129, 0.8);
+  --btn-eq-hover: rgba(16, 185, 129, 1);
+  
+  --text-light: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-screen: #0ea5e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(249, 115, 22, 0.15), transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(14, 165, 233, 0.15), transparent 40%);
+}
+
+.glass-panel {
+  background: var(--calc-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--calc-border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+}
+
+/* Digital Display Font */
+.digital-font {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+}
